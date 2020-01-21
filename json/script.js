@@ -4,4 +4,4 @@ let mahasiswa = {
     email: "riofchrdn@gmail.com"
 }
 
-console.log(mahasiswa);
+console.log(JSON.stringify(mahasiswa));
