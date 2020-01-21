@@ -1,0 +1,29 @@
+[{
+        "nama": "Rio Fachrudin",
+        "umur": 19,
+        "nrp": "181132",
+        "lulus": true,
+        "hobby": [
+            "Coding",
+            "Gaming"
+        ],
+        "pembimbing": {
+            "pembimbing1": "Doddy Ferdiansyah",
+            "pembimbing2": "Erick Doank"
+        }
+    },
+    {
+        "nama": "Rio Fachrudin",
+        "umur": 19,
+        "nrp": "181132",
+        "lulus": true,
+        "hobby": [
+            "Coding",
+            "Gaming"
+        ],
+        "pembimbing": {
+            "pembimbing1": "Doddy Ferdiansyah",
+            "pembimbing2": "Erick Doank"
+        }
+    }
+]
