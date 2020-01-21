@@ -3,6 +3,7 @@
 $data = file_get_contents('pizza.json');
 $menu = json_decode($data, true);
 
+$tampil = $menu["menu"];
 ?>
 
 
@@ -30,7 +31,7 @@ $menu = json_decode($data, true);
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link active" href="#">All Menu</a>
                 </div>
             </div>
     </nav>
@@ -43,17 +44,23 @@ $menu = json_decode($data, true);
         </div>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/pizza/american-favourite.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">American Favourite</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h5 class="card-title">Rp. 60.000</h5>
-                        <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+            <?php
+            foreach ($tampil as $row) :
+            ?>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="img/pizza/<?= $row["gambar"]; ?>" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= $row["nama"]; ?></h5>
+                            <p class="card-text"><?= $row["deskripsi"]; ?></p>
+                            <h5 class="card-title">Rp. <?= $row["harga"]; ?></h5>
+                            <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php
+            endforeach;
+            ?>
         </div>
     </div>
 
