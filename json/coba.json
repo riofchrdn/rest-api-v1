@@ -3,24 +3,18 @@
         "umur": 19,
         "nrp": "181132",
         "lulus": true,
-        "hobby": [
-            "Coding",
-            "Gaming"
-        ],
+        "hobby": "Coding",
         "pembimbing": {
             "pembimbing1": "Doddy Ferdiansyah",
             "pembimbing2": "Erick Doank"
         }
     },
     {
-        "nama": "Rio Fachrudin",
-        "umur": 19,
-        "nrp": "181132",
+        "nama": "Aida Nur fitriana",
+        "umur": 20,
+        "nrp": "181131",
         "lulus": true,
-        "hobby": [
-            "Coding",
-            "Gaming"
-        ],
+        "hobby": "Gaming",
         "pembimbing": {
             "pembimbing1": "Doddy Ferdiansyah",
             "pembimbing2": "Erick Doank"
